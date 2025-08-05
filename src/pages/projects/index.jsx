@@ -14,7 +14,7 @@ export const Projects = () => {
       text:"Stop-Watch"
     },
     {
-      link:"/projects/weather-forecastt",
+      link:"/projects/weather-forecast",
       text:"Weather Forecast"
     }
   ]
@@ -35,10 +35,10 @@ export const Projects = () => {
     </p> */}
     <div className='max-w-[900px] mx-auto '>
 
-  <div className='bg-[#003399] text-4xl text-white rounded-full px-18 mt-8 mx-auto'>{
+  <div className='bg-[#003399] text-2xl text-white rounded-full px-18 mt-8 mx-auto  py-12'>{
     projectDone.map((item,index)=>(
       <div key={index} >
-        <a href={item.link}>{item.text}</a>
+        <a href={item.link} className='space-x-4 '><span>{index+1}</span><span>{item.text}</span></a>
         </div>
     ))
     
